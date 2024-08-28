@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    --bg-color: rgb(255, 76, 76);
+    --dark-color: rgb(112, 0, 0);
+}
+
+body, div, ul, li, a ,h1 , h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.829)) , url(./Files/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 200dvh;
+}
+
+
+header {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+}
+
+.text__container {
+    min-height: 100vh;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    display: flex;
+    font-size: clamp(1rem, 8vw, 12rem);
+    color: rgb(63, 63, 63);
+    mix-blend-mode: lighten;
+    color: red;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 2100px;
+    width: 100%;
+    align-items: center;
+}
+
+.left__text {
+    color: white;
+    padding-left: 6vw;
+}
+
+.right__text{
+    padding-right: 6vw;
+}
+
+img {
+    filter: grayscale();
+    mix-blend-mode: screen;
+    position: fixed;
+    top: 0;
+    animation: aparecer both;
+    animation-timeline: scroll();
+    max-height: 100vh;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        filter: grayscale() blur(20px);
+        translate: 0 -20%;
+        scale: .6;
+    }
+
+    100% {
+        opacity: 1;
+        filter: grayscale() blur(0);
+        translate: 0 0;
+        scale: 1;
+    }
+}
