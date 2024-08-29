@@ -15,5 +15,6 @@ HTML5: Semantic and accessible content structure.
 CSS3: Advanced animations, transitions, and visual effects.
 
 Check the result here!! --------> https://aperezvigoa.github.io/scroll_animation/
+
 **Firefox NOT working**
 
